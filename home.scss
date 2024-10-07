@@ -1,0 +1,699 @@
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Teko", sans-serif;
+}
+
+
+body {
+    #btn {
+        span {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background-color: #f947ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 2;
+        }
+    }
+
+    .icon {
+        width: 50px;
+        color: white;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    background-color: black;
+    color: white;
+
+    nav {
+   
+
+        a {
+            font-size: 17px;
+            padding: 10px;
+            color: white;
+        }
+
+        .link-nav {
+            @media(max-width:990px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+            }
+
+            .div {
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .custom-toggler {
+        border: 1px solid #f947ff;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            border-color: #f947ff;
+        }
+
+        .navbar-toggler-icon {
+            width: 40px;
+            height: 35px;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' d='M4 6h22M4 14h22M4 22h22'/%3E%3C/svg%3E"); // Lignes blanches de 3px
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+
+    .navbar-nav .nav-link {
+        position: relative;
+        text-decoration: none;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+            width: 0;
+            height: 2px;
+            background-color: #f947ff;
+            transition: width 0.3s ease-in-out;
+        }
+
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+
+
+/*SHOWCASE-SECTION*/
+.carousel {
+    .carousel-inner {
+        .carousel-item {
+            .showcase-one {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate13.jpg);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                padding: 20px;
+
+                .content {
+                    padding: 200px 0 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    border: 1px solid rgb(83, 83, 83);
+                    padding: 100px;
+
+                    h1 {
+                        font-size: 4.5rem;
+
+                        /*media query*/
+                        @media(max-width:1000px) {
+                            font-size: 3.5rem;
+                        }
+
+                        @media(max-width:770px) {
+                            font-size: 2rem;
+                        }
+
+                        @media(max-width:534px) {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+                    }
+
+                    p{
+                        color: #f947ff;
+                    }
+
+                    button{
+                        border: none;
+                        background-color:#f947ff ;
+                        color: white;
+                        padding: 12px;
+                        width: 200px;
+                        border: 2px solid #f947ff;
+                        transition: all .5s;
+                    }
+
+                    button:hover{
+                        background-color: transparent;
+                        border: 2px solid #f947ff;
+                    }
+
+                 
+                }
+            }
+
+            .showcase-two {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate3.jpg);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                padding: 20px;
+
+                .content {
+                    padding: 200px 0 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    border: 1px solid rgb(83, 83, 83);
+                    padding: 100px;
+
+                    h1 {
+                        font-size: 4.5rem;
+
+                        /*media query*/
+                        @media(max-width:1000px) {
+                            font-size: 3.5rem;
+                        }
+
+                        @media(max-width:770px) {
+                            font-size: 2rem;
+                        }
+
+                        @media(max-width:534px) {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+                    }
+
+                    p{
+                        color: #f947ff;
+                    }
+
+                    button{
+                        border: none;
+                        background-color:#f947ff ;
+                        color: white;
+                        padding: 12px;
+                        width: 200px;
+                        border: 2px solid #f947ff;
+                        transition: all .5s;
+                    }
+
+                    button:hover{
+                        background-color: transparent;
+                        border: 2px solid #f947ff;
+                    }
+
+                   
+                }
+            }
+
+            .showcase-three {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate.jpg);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                padding: 20px;
+
+                .content {
+                    padding: 200px 0 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    border: 1px solid rgb(83, 83, 83);
+                    padding: 100px;
+
+                    h1 {
+                        font-size: 4.5rem;
+
+                        /*media query*/
+                        @media(max-width:1000px) {
+                            font-size: 3.5rem;
+                        }
+
+                        @media(max-width:770px) {
+                            font-size: 2rem;
+                        }
+
+                        @media(max-width:534px) {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+                    }
+
+                    p{
+                        color: #f947ff;
+                    }
+
+                    button{
+                        border: none;
+                        background-color:#f947ff ;
+                        color: white;
+                        padding: 12px;
+                        width: 200px;
+                        border: 2px solid #f947ff;
+                        transition: all .5s;
+                        font-weight: bold;
+                    }
+
+                    button:hover{
+                        background-color: transparent;
+                        border: 2px solid #f947ff;
+                    }
+
+                    
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*action-section*/
+    .action-section{
+        .title{
+
+            h6{
+                color: #f947ff;
+            }
+        }
+
+        .action-content{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            /*MEDIA QUERY*/
+            @media(max-width:1200px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+             /*MEDIA QUERY*/
+             @media(max-width:500px){
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+
+            .action{
+                box-shadow: 0 5px 10px 0 rgba(145, 143, 143, 0.1), 0 7px 21px 0 rgba(117, 116, 116, 0.1);
+                padding: 20px;
+                transition: all .5s;
+
+                .link{
+                    text-decoration: none;
+                    color: #f947ff;
+                    transition: all .5s;
+                }
+
+                .link:hover{
+                    color: rgb(77, 198, 238);
+                }
+            }
+
+            .action:hover{
+                transform: translate(0,-10px);
+            }
+        }
+    }
+
+    /*help-section*/
+    .help-section{
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            /*MEDIA QUERY*/
+            @media(max-width:1000px){
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .help{
+                background-color: #ec78f0;
+                color: white;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1{
+                    font-size: 4rem;
+                    /*MEDIA QUERY*/
+                    @media(max-width:530px){
+                        font-size: 3rem;
+                    }
+                }
+
+                button{
+                    border: none;
+                    background-color:white;
+                    color: black;
+                    padding: 12px;
+                    width: 200px;
+                    border: 2px solid white;
+                    transition: all .5s;
+                    font-weight: bold;
+                }
+
+                button:hover{
+                    background-color: transparent;
+                    border: 2px solid white;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+    /*donation-section*/
+    .donation-section{
+        h6{
+            color: #f947ff;
+        }
+        .donate-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            /*MEDIA QUERY*/
+            @media(max-width:1200px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+             /*MEDIA QUERY*/
+             @media(max-width:770px){
+                display: grid;
+                grid-template-columns: 1fr ;
+                gap: 20px;
+            }
+            .donation{
+                padding:10px ;
+                transition: all .5s;
+
+
+               
+               
+                   h3{
+                    color: #64cbee;
+                    transition: all .5s;
+                    cursor: pointer;
+                   }
+
+                   h3:hover{
+                    color: #ec78f0;
+                   }
+
+                   a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: rgb(71, 69, 69);
+                   }
+
+                   a:hover{
+                    color:black;
+                   }
+
+                .img1{
+                    background-image: url(images/donate8.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+                }
+
+                .img1:hover{
+                    border: 5px solid #f947ff;
+                    transition: all .5s;
+
+                }
+
+                .description{
+                    box-shadow: 0 5px 10px 0 rgba(145, 143, 143, 0.1), 0 7px 21px 0 rgba(117, 116, 116, 0.1);
+                    padding: 10px;
+                }   
+
+
+                .img2{
+                    background-image: url(images/donate6.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+                }
+
+                .img3{
+                    background-image: url(images/donate10.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+                }
+
+                .img4{
+                    background-image: url(images/donate18.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+
+                }
+
+                .img5{
+                    background-image: url(images/donate11.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+                }
+
+                .img6{
+                    background-image: url(images/donate14.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+                }
+            }
+
+            .donation:hover{
+                transform: translate(0,-10px);
+            }
+        }
+
+    }
+
+
+    /*raising-section*/
+    .raising-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*MEDIA QUERY*/
+        @media(max-width:670px){
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+        .content1{
+          .description{
+            background-color: #f947ff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+          }
+
+          /**/
+        }
+
+        .content2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color: rgb(3, 3, 22);
+            color: white;
+
+            h6{
+                color: #f947ff;
+            }
+
+            button{
+                border: none;
+                background-color:#f947ff ;
+                color: white;
+                padding: 12px;
+                width: 200px;
+                border: 2px solid #f947ff;
+                transition: all .5s;
+                font-weight: bold;
+            }
+
+            button:hover{
+                background-color: transparent;
+                border: 2px solid #f947ff;
+            }
+        }
+    }
+
+    /*our-galery-section*/
+    .our-galery-section{
+        h6{
+            color: #f947ff;
+        }
+        .galery-content{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           /*MEDAI QUERY*/
+           @media(max-width:900px){
+            display: grid;
+            grid-template-columns: 1fr;
+           }
+
+           .image{
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /*DISPLAY THE OVERLAY*/
+        .image .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(21, 20, 51, 0.8) ;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.35s ease;
+            opacity: 0;
+            color: #fff;
+          
+        }
+                
+        .image:hover .overlay{
+           opacity: 1;
+        }
+        
+     
+       /*GALERY IMAGES*/
+        .galery1{
+            background-image: url(images/donate4.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+
+            /*MEDAI QUERY*/
+            @media(max-width:900px){
+                height: 300px;
+            }
+        }
+
+        .img1{
+            background-image: url(images/donate19.jpg);
+            background-position: center;
+            background-size: cover;
+              /*MEDAI QUERY*/
+              @media(max-width:900px){
+                height: 300px;
+            }
+        }
+
+        .img1-1{
+            background-image: url(images/donate20.jpg);
+            background-position: center;
+            background-size: cover;
+              /*MEDAI QUERY*/
+              @media(max-width:900px){
+                height: 300px;
+            }
+        }
+
+        .img1-2{
+            background-image: url(images/donate22.jpg);
+            background-position: center;
+            background-size: cover;
+              /*MEDAI QUERY*/
+              @media(max-width:900px){
+                height: 300px;
+            }
+        }
+
+
+          .galery2{
+           display:grid ;
+           grid-row: 1fr 1fr;
+          }
+
+           .img2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /*MEDAI QUERY*/
+            @media(max-width:700px){
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+           }
+        }
+    }
+
+    /*FOOTER*/
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 10px;
+        background-color: #02020a;
+        /*MEDIA QUERY*/
+        @media(max-width:770px){
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+
+            p{
+                transition: all .5s;
+            }
+    
+            p:hover{
+                transform: translate(0,-5px);
+    
+            }
+        }
+    }

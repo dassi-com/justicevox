@@ -1,0 +1,276 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Teko", sans-serif;
+}
+
+body #btn span {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #f947ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+body .icon {
+  width: 50px;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color: black;
+  color: white;
+}
+header nav a {
+  font-size: 17px;
+  padding: 10px;
+  color: white;
+}
+@media (max-width: 990px) {
+  header nav .link-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}
+header nav .link-nav .div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .custom-toggler {
+  border: 1px solid #f947ff;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+header .custom-toggler:hover {
+  border-color: #f947ff;
+}
+header .custom-toggler .navbar-toggler-icon {
+  width: 40px;
+  height: 35px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' d='M4 6h22M4 14h22M4 22h22'/%3E%3C/svg%3E");
+  transition: all 0.3s ease-in-out;
+}
+header .navbar-nav .nav-link {
+  position: relative;
+  text-decoration: none;
+}
+header .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0;
+  height: 2px;
+  background-color: #f947ff;
+  transition: width 0.3s ease-in-out;
+}
+header .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/*SHOWCASE-SECTION*/
+.showcase-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/donate13.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.showcase-section .showcase-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 100px;
+}
+.showcase-section .showcase-content .content h1 {
+  font-size: 5rem;
+  color: white;
+  /*MEDAI QUERY*/
+}
+@media (max-width: 520px) {
+  .showcase-section .showcase-content .content h1 {
+    font-size: 3rem;
+  }
+}
+.showcase-section .showcase-content .content a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+.showcase-section .showcase-content .content a:hover {
+  color: #f947ff;
+}
+.showcase-section .showcase-content .content .a {
+  color: #f947ff;
+}
+
+/*donation-section*/
+.donation-section h6 {
+  color: #f947ff;
+}
+.donation-section .donate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  /*MEDIA QUERY*/
+  /*MEDIA QUERY*/
+}
+@media (max-width: 1200px) {
+  .donation-section .donate-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .donation-section .donate-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.donation-section .donate-content .donation {
+  padding: 10px;
+  transition: all 0.5s;
+}
+.donation-section .donate-content .donation h3 {
+  color: #64cbee;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.donation-section .donate-content .donation h3:hover {
+  color: #ec78f0;
+}
+.donation-section .donate-content .donation a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(71, 69, 69);
+}
+.donation-section .donate-content .donation a:hover {
+  color: black;
+}
+.donation-section .donate-content .donation .img1 {
+  background-image: url(images/donate8.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img1:hover {
+  border: 5px solid #f947ff;
+  transition: all 0.5s;
+}
+.donation-section .donate-content .donation .description {
+  box-shadow: 0 5px 10px 0 rgba(145, 143, 143, 0.1), 0 7px 21px 0 rgba(117, 116, 116, 0.1);
+  padding: 10px;
+}
+.donation-section .donate-content .donation .img2 {
+  background-image: url(images/donate6.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img3 {
+  background-image: url(images/donate10.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img4 {
+  background-image: url(images/donate18.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img5 {
+  background-image: url(images/donate11.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img6 {
+  background-image: url(images/donate14.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation:hover {
+  transform: translate(0, -10px);
+}
+
+/*petition-section*/
+.petition-section .petition-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 1000px) {
+  .petition-section .petition-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.petition-section p, .petition-section li {
+  color: rgb(66, 66, 66);
+}
+.petition-section h6 {
+  color: #f947ff;
+}
+.petition-section .img-section {
+  background-image: url(images/donate14.jpg);
+  background-position: center;
+  background-size: cover;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 1000px) {
+  .petition-section .img-section {
+    height: 400px;
+  }
+}
+
+/*FOOTER*/
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  background-color: #02020a;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 770px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer-content .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-content .icons p {
+  transition: all 0.5s;
+}
+.footer-content .icons p:hover {
+  transform: translate(0, -5px);
+}/*# sourceMappingURL=donation.css.map */

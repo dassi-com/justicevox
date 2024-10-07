@@ -1,0 +1,609 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Teko", sans-serif;
+}
+
+body #btn span {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #f947ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+body .icon {
+  width: 50px;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color: black;
+  color: white;
+}
+header nav a {
+  font-size: 17px;
+  padding: 10px;
+  color: white;
+}
+@media (max-width: 990px) {
+  header nav .link-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}
+header nav .link-nav .div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .custom-toggler {
+  border: 1px solid #f947ff;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+header .custom-toggler:hover {
+  border-color: #f947ff;
+}
+header .custom-toggler .navbar-toggler-icon {
+  width: 40px;
+  height: 35px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' d='M4 6h22M4 14h22M4 22h22'/%3E%3C/svg%3E");
+  transition: all 0.3s ease-in-out;
+}
+header .navbar-nav .nav-link {
+  position: relative;
+  text-decoration: none;
+}
+header .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0;
+  height: 2px;
+  background-color: #f947ff;
+  transition: width 0.3s ease-in-out;
+}
+header .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/*SHOWCASE-SECTION*/
+.carousel .carousel-inner .carousel-item .showcase-one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate13.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+.carousel .carousel-inner .carousel-item .showcase-one .content {
+  padding: 200px 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgb(83, 83, 83);
+  padding: 100px;
+}
+.carousel .carousel-inner .carousel-item .showcase-one .content h1 {
+  font-size: 4.5rem;
+  /*media query*/
+}
+@media (max-width: 1000px) {
+  .carousel .carousel-inner .carousel-item .showcase-one .content h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 770px) {
+  .carousel .carousel-inner .carousel-item .showcase-one .content h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 534px) {
+  .carousel .carousel-inner .carousel-item .showcase-one .content h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.carousel .carousel-inner .carousel-item .showcase-one .content p {
+  color: #f947ff;
+}
+.carousel .carousel-inner .carousel-item .showcase-one .content button {
+  border: none;
+  background-color: #f947ff;
+  color: white;
+  padding: 12px;
+  width: 200px;
+  border: 2px solid #f947ff;
+  transition: all 0.5s;
+}
+.carousel .carousel-inner .carousel-item .showcase-one .content button:hover {
+  background-color: transparent;
+  border: 2px solid #f947ff;
+}
+.carousel .carousel-inner .carousel-item .showcase-two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+.carousel .carousel-inner .carousel-item .showcase-two .content {
+  padding: 200px 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgb(83, 83, 83);
+  padding: 100px;
+}
+.carousel .carousel-inner .carousel-item .showcase-two .content h1 {
+  font-size: 4.5rem;
+  /*media query*/
+}
+@media (max-width: 1000px) {
+  .carousel .carousel-inner .carousel-item .showcase-two .content h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 770px) {
+  .carousel .carousel-inner .carousel-item .showcase-two .content h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 534px) {
+  .carousel .carousel-inner .carousel-item .showcase-two .content h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.carousel .carousel-inner .carousel-item .showcase-two .content p {
+  color: #f947ff;
+}
+.carousel .carousel-inner .carousel-item .showcase-two .content button {
+  border: none;
+  background-color: #f947ff;
+  color: white;
+  padding: 12px;
+  width: 200px;
+  border: 2px solid #f947ff;
+  transition: all 0.5s;
+}
+.carousel .carousel-inner .carousel-item .showcase-two .content button:hover {
+  background-color: transparent;
+  border: 2px solid #f947ff;
+}
+.carousel .carousel-inner .carousel-item .showcase-three {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+.carousel .carousel-inner .carousel-item .showcase-three .content {
+  padding: 200px 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgb(83, 83, 83);
+  padding: 100px;
+}
+.carousel .carousel-inner .carousel-item .showcase-three .content h1 {
+  font-size: 4.5rem;
+  /*media query*/
+}
+@media (max-width: 1000px) {
+  .carousel .carousel-inner .carousel-item .showcase-three .content h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 770px) {
+  .carousel .carousel-inner .carousel-item .showcase-three .content h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 534px) {
+  .carousel .carousel-inner .carousel-item .showcase-three .content h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.carousel .carousel-inner .carousel-item .showcase-three .content p {
+  color: #f947ff;
+}
+.carousel .carousel-inner .carousel-item .showcase-three .content button {
+  border: none;
+  background-color: #f947ff;
+  color: white;
+  padding: 12px;
+  width: 200px;
+  border: 2px solid #f947ff;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.carousel .carousel-inner .carousel-item .showcase-three .content button:hover {
+  background-color: transparent;
+  border: 2px solid #f947ff;
+}
+
+/*action-section*/
+.action-section .title h6 {
+  color: #f947ff;
+}
+.action-section .action-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /*MEDIA QUERY*/
+  /*MEDIA QUERY*/
+}
+@media (max-width: 1200px) {
+  .action-section .action-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .action-section .action-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.action-section .action-content .action {
+  box-shadow: 0 5px 10px 0 rgba(145, 143, 143, 0.1), 0 7px 21px 0 rgba(117, 116, 116, 0.1);
+  padding: 20px;
+  transition: all 0.5s;
+}
+.action-section .action-content .action .link {
+  text-decoration: none;
+  color: #f947ff;
+  transition: all 0.5s;
+}
+.action-section .action-content .action .link:hover {
+  color: rgb(77, 198, 238);
+}
+.action-section .action-content .action:hover {
+  transform: translate(0, -10px);
+}
+
+/*help-section*/
+.help-section .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 1000px) {
+  .help-section .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.help-section .content .help {
+  background-color: #ec78f0;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help-section .content .help h1 {
+  font-size: 4rem;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 530px) {
+  .help-section .content .help h1 {
+    font-size: 3rem;
+  }
+}
+.help-section .content .help button {
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 12px;
+  width: 200px;
+  border: 2px solid white;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.help-section .content .help button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+/*donation-section*/
+.donation-section h6 {
+  color: #f947ff;
+}
+.donation-section .donate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  /*MEDIA QUERY*/
+  /*MEDIA QUERY*/
+}
+@media (max-width: 1200px) {
+  .donation-section .donate-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .donation-section .donate-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.donation-section .donate-content .donation {
+  padding: 10px;
+  transition: all 0.5s;
+}
+.donation-section .donate-content .donation h3 {
+  color: #64cbee;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.donation-section .donate-content .donation h3:hover {
+  color: #ec78f0;
+}
+.donation-section .donate-content .donation a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(71, 69, 69);
+}
+.donation-section .donate-content .donation a:hover {
+  color: black;
+}
+.donation-section .donate-content .donation .img1 {
+  background-image: url(images/donate8.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img1:hover {
+  border: 5px solid #f947ff;
+  transition: all 0.5s;
+}
+.donation-section .donate-content .donation .description {
+  box-shadow: 0 5px 10px 0 rgba(145, 143, 143, 0.1), 0 7px 21px 0 rgba(117, 116, 116, 0.1);
+  padding: 10px;
+}
+.donation-section .donate-content .donation .img2 {
+  background-image: url(images/donate6.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img3 {
+  background-image: url(images/donate10.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img4 {
+  background-image: url(images/donate18.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img5 {
+  background-image: url(images/donate11.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation .img6 {
+  background-image: url(images/donate14.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.donation-section .donate-content .donation:hover {
+  transform: translate(0, -10px);
+}
+
+/*raising-section*/
+.raising-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 670px) {
+  .raising-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.raising-section .content1 {
+  /**/
+}
+.raising-section .content1 .description {
+  background-color: #f947ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.raising-section .content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgb(3, 3, 22);
+  color: white;
+}
+.raising-section .content2 h6 {
+  color: #f947ff;
+}
+.raising-section .content2 button {
+  border: none;
+  background-color: #f947ff;
+  color: white;
+  padding: 12px;
+  width: 200px;
+  border: 2px solid #f947ff;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+.raising-section .content2 button:hover {
+  background-color: transparent;
+  border: 2px solid #f947ff;
+}
+
+/*our-galery-section*/
+.our-galery-section h6 {
+  color: #f947ff;
+}
+.our-galery-section .galery-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*MEDAI QUERY*/
+  /*DISPLAY THE OVERLAY*/
+  /*GALERY IMAGES*/
+}
+@media (max-width: 900px) {
+  .our-galery-section .galery-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.our-galery-section .galery-content .image {
+  position: relative;
+  overflow: hidden;
+}
+.our-galery-section .galery-content .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 20, 51, 0.8);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.35s ease;
+  opacity: 0;
+  color: #fff;
+}
+.our-galery-section .galery-content .image:hover .overlay {
+  opacity: 1;
+}
+.our-galery-section .galery-content .galery1 {
+  background-image: url(images/donate4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  /*MEDAI QUERY*/
+}
+@media (max-width: 900px) {
+  .our-galery-section .galery-content .galery1 {
+    height: 300px;
+  }
+}
+.our-galery-section .galery-content .img1 {
+  background-image: url(images/donate19.jpg);
+  background-position: center;
+  background-size: cover;
+  /*MEDAI QUERY*/
+}
+@media (max-width: 900px) {
+  .our-galery-section .galery-content .img1 {
+    height: 300px;
+  }
+}
+.our-galery-section .galery-content .img1-1 {
+  background-image: url(images/donate20.jpg);
+  background-position: center;
+  background-size: cover;
+  /*MEDAI QUERY*/
+}
+@media (max-width: 900px) {
+  .our-galery-section .galery-content .img1-1 {
+    height: 300px;
+  }
+}
+.our-galery-section .galery-content .img1-2 {
+  background-image: url(images/donate22.jpg);
+  background-position: center;
+  background-size: cover;
+  /*MEDAI QUERY*/
+}
+@media (max-width: 900px) {
+  .our-galery-section .galery-content .img1-2 {
+    height: 300px;
+  }
+}
+.our-galery-section .galery-content .galery2 {
+  display: grid;
+  grid-row: 1fr 1fr;
+}
+.our-galery-section .galery-content .img2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*MEDAI QUERY*/
+}
+@media (max-width: 700px) {
+  .our-galery-section .galery-content .img2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/*FOOTER*/
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  background-color: #02020a;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 770px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer-content .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-content .icons p {
+  transition: all 0.5s;
+}
+.footer-content .icons p:hover {
+  transform: translate(0, -5px);
+}/*# sourceMappingURL=home.css.map */
