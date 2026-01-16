@@ -116,9 +116,10 @@ header {
 
 /*SHOWCASE-SECTION*/
 .showcase-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/about.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/donate11.jpg);
     background-size: cover;
     background-position: center;
+  
 
     .showcase-content {
         display: flex;
@@ -204,7 +205,8 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 400px;
+    height: auto;
+    
 
     .counter-content {
         display: flex;

@@ -43,8 +43,7 @@ header {
     color: white;
 
     nav {
-   
-
+        
         a {
             font-size: 17px;
             padding: 10px;
@@ -120,7 +119,7 @@ header {
             .showcase-one {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate13.jpg);
                 background-size: cover;
-                background-position: center;
+                background-position: top;
                 background-attachment: fixed;
                 padding: 20px;
 
@@ -169,8 +168,6 @@ header {
                         background-color: transparent;
                         border: 2px solid #f947ff;
                     }
-
-                 
                 }
             }
 
@@ -450,11 +447,10 @@ header {
                     height: 300px;
                 }
 
-                .img1:hover{
-                    border: 5px solid #f947ff;
-                    transition: all .5s;
-
-                }
+                // .img1:hover{
+                //     border: 5px solid #f947ff;
+                //     transition: all .5s;
+                // }
 
                 .description{
                     box-shadow: 0 5px 10px 0 rgba(145, 143, 143, 0.1), 0 7px 21px 0 rgba(117, 116, 116, 0.1);

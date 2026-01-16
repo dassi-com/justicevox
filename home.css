@@ -91,7 +91,7 @@ header .navbar-nav .nav-link:hover::after {
 .carousel .carousel-inner .carousel-item .showcase-one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/donate13.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   padding: 20px;
 }
@@ -385,10 +385,6 @@ header .navbar-nav .nav-link:hover::after {
   background-position: center;
   background-size: cover;
   height: 300px;
-}
-.donation-section .donate-content .donation .img1:hover {
-  border: 5px solid #f947ff;
-  transition: all 0.5s;
 }
 .donation-section .donate-content .donation .description {
   box-shadow: 0 5px 10px 0 rgba(145, 143, 143, 0.1), 0 7px 21px 0 rgba(117, 116, 116, 0.1);
